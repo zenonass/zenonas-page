@@ -33,7 +33,7 @@ header{
 }
 
 footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -54,6 +54,20 @@ h1{
     text-shadow: rgb(43 109 151) 1px 0px 4px;
     color: white;
     letter-spacing: .1rem;
+}
+h2{
+    font-size: 2.8rem;
+    text-shadow: #d9b751 1px 0px 4px;
+    color: white;
+    letter-spacing: .1rem;
+}
+
+.content-wrapper:first-child{
+    margin-top: 50px;
+}
+
+.content-wrapper:last-child{
+    margin-bottom: 50px;
 }
 
 h1::before{
@@ -95,4 +109,44 @@ h1::before{
 
 .nav-menu__btn:hover{
     color: #ffde7a;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-wrapper{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+    width: 40%;
+}
+
+h3{
+    align-self: flex-start;
+}
+h3::before{
+    content: '1';
+    position: absolute;
+    left: -2.5em;
+    top: -.5em;
+    background: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid gray;
+    color: gray;
+    box-sizing: border-box;
 }
