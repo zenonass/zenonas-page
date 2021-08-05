@@ -120,6 +120,7 @@ h1::before{
 p{
     text-align: justify;
     text-justify: inter-word;
+    color:#6d6969;
 }
 
 .content-wrapper{
@@ -129,16 +130,21 @@ p{
     align-items: center;
     row-gap: 3vh;
     width: 40%;
+    counter-reset: counter-number;
 }
 
 h3{
     align-self: flex-start;
+    color: #b9d9ee;
+    text-shadow: rgb(165 192 209) 1px 0px 1px;
+    letter-spacing: .07rem;
 }
 h3::before{
-    content: '1';
-    position: absolute;
-    left: -2.5em;
-    top: -.5em;
+    counter-increment: counter-number;
+    content: counter(counter-number);
+    position: relative;
+    left: -3.5em;
+    top: 1.8em;
     background: white;
     width: 2em;
     height: 2em;
@@ -146,7 +152,7 @@ h3::before{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid gray;
-    color: gray;
+    border: 3px solid rgb(185 217 238);
+    color: rgb(185 217 238);
     box-sizing: border-box;
 }
