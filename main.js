@@ -132,7 +132,7 @@ homeButton.addEventListener("click", () =>{
     const aboutParagraph = document.createElement('p');
 
     about.textContent = "About";
-    aboutParagraph.textContent = "The purpose of this simple website was to learn more about Javascript and DOM manipulation.";
+    aboutParagraph.textContent = "The purpose of building this simple website was to learn more about Javascript, DOM manipulation and play around with CSS.";
     content.appendChild(about);
     content.appendChild(aboutParagraph);
 });
