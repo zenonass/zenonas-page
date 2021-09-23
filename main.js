@@ -20,7 +20,7 @@ meditationButton.addEventListener("click", () =>{
 
 
     meditation.textContent = "Meditation";
-    meditationParagraph.textContent = "This is about meditation";
+    meditationParagraph.textContent = "Meditation isn’t about becoming a different person, a new person, or even a better person. It’s about training in awareness and getting a healthy sense of perspective. You’re not trying to turn off your thoughts or feelings. You’re learning to observe them without judgment. And eventually, you may start to better understand them as well.";
     benefits.textContent = "Benefits";
     firstPoint.textContent = "Easier to sustain attention";
 
@@ -60,15 +60,15 @@ gratitudeButton.addEventListener("click", () =>{
 
 
     gratitude.textContent = "Gratitude";
-    gratitudeParagraph.textContent = "This is about gratitude";
+    gratitudeParagraph.textContent = "Spontaneously generated from within, it is an affirmation of goodness and warmth. This social emotion strengthens relationships, and its roots run deep in evolutionary history—emanating from the survival value of helping others and being helped in return. Studies show that specific areas of the brain are involved in experiencing and expressing gratitude. Brain scans of people assigned a task that stimulates expression of gratitude show lasting changes in the prefrontal cortex that heighten sensitivity to future experiences of gratitude.";
     benefits.textContent = "Benefits";
     firstPoint.textContent = "Increase optimism";
 
-    firstPointParagraph.textContent = " If you’re not naturally optimistic, gratitude practice can help you cultivate an optimistic outlook";
+    firstPointParagraph.textContent = " If you’re not naturally optimistic, gratitude practice can help you cultivate an optimistic outlook.";
 
     secondPoint.textContent = "Clarity on what's important";
 
-    secondPointParagraph.textContent = "By noting what you are grateful for, you tend to gain clarity on what you want to have more of in your life, and what you can cut from you life. You then gain a new perspective of what is important to you and what you truly appreciate in your life";
+    secondPointParagraph.textContent = "By noting what you are grateful for, you tend to gain clarity on what you want to have more of in your life, and what you can cut from you life. You then gain a new perspective of what is important to you and what you truly appreciate in your life.";
 
     thirdPoint.textContent = "Improves relationships";
     
@@ -100,7 +100,7 @@ yogaButton.addEventListener("click", () =>{
 
 
     yoga.textContent = "Yoga";
-    yogaParagraph.textContent = "This is about yoga";
+    yogaParagraph.textContent = "Yoga is an ancient practice that involves physical poses, concentration, and deep breathing. A regular yoga practice can promote endurance, strength, calmness, flexibility, and well-being. Modern yoga focuses on exercise, strength, agility, and breathing. It can help boost physical and mental well-being.";
     benefits.textContent = "Benefits";
     firstPoint.textContent = "Improves your flexibility";
 
@@ -130,17 +130,11 @@ homeButton.addEventListener("click", () =>{
 
     const about = document.createElement('h2');
     const aboutParagraph = document.createElement('p');
-    const aboutParagraphTwo = document.createElement('p');
-    const aboutParagraphThree = document.createElement('p');
 
     about.textContent = "About";
-    aboutParagraph.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas odio nulla, ac facilisis massa pretium vitae. Sed a iaculis arcu. Aenean dolor orci, egestas ut egestas ac, aliquet eu nisl. Aliquam sapien massa, venenatis nec venenatis ut, tincidunt porta massa. Vestibulum luctus tortor nibh. Sed malesuada sodales ex nec tempus. Nam quis convallis odio. Sed non dolor suscipit, consectetur tellus et, cursus leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.";
-    aboutParagraphTwo.textContent = aboutParagraph.textContent;
-    aboutParagraphThree.textContent = aboutParagraph.textContent;
+    aboutParagraph.textContent = "The purpose of this simple website was to learn more about Javascript and DOM manipulation.";
     content.appendChild(about);
     content.appendChild(aboutParagraph);
-    content.appendChild(aboutParagraphTwo);
-    content.appendChild(aboutParagraphThree);
 });
 function clearContent(){
     content.innerHTML = "";

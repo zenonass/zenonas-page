@@ -70,6 +70,10 @@ h2{
     margin-bottom: 50px;
 }
 
+p:last-child{
+    padding-bottom: 100px;
+}
+
 h1::before{
     content: '';
     background-size: 18% 100%;
@@ -130,6 +134,7 @@ p{
     row-gap: 3vh;
     width: 40%;
     counter-reset: counter-number;
+    height: 61vh;
 }
 
 h3{
