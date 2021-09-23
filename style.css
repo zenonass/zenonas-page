@@ -8,7 +8,7 @@
 }
 
 html{
-    background: url('/background.png') no-repeat center center fixed;
+    background: url('background.png') no-repeat center center fixed;
     width: 100%;
     height: 100%;
     -webkit-background-size: cover;
@@ -73,7 +73,7 @@ h2{
 h1::before{
     content: '';
     background-size: 18% 100%;
-    background-image: url('/yoga.png');
+    background-image: url('yoga.png');
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
