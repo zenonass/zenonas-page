@@ -20,7 +20,7 @@ meditationButton.addEventListener("click", () =>{
 
 
     meditation.textContent = "Meditation";
-    meditationParagraph.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+    meditationParagraph.textContent = "This is about meditation";
     benefits.textContent = "Benefits";
     firstPoint.textContent = "Easier to sustain attention";
 
@@ -85,9 +85,63 @@ gratitudeButton.addEventListener("click", () =>{
     content.appendChild(thirdPointParagraph);
 });
 
+yogaButton.addEventListener("click", () =>{
+    clearContent();
+
+    const yoga = document.createElement('h2');
+    const yogaParagraph = document.createElement('p');
+    const benefits = document.createElement('h2');
+    const firstPoint = document.createElement('h3');
+    const firstPointParagraph = document.createElement('p');
+    const secondPoint = document.createElement('h3');
+    const secondPointParagraph = document.createElement('p');
+    const thirdPoint = document.createElement('h3');
+    const thirdPointParagraph = document.createElement('p');
 
 
+    yoga.textContent = "Yoga";
+    yogaParagraph.textContent = "This is about yoga";
+    benefits.textContent = "Benefits";
+    firstPoint.textContent = "Improves your flexibility";
 
+    firstPointParagraph.textContent = "Improved flexibility is one of the first and most obvious benefits of yoga. During your first class, you probably won’t be able to touch your toes, never mind do a backbend. But if you stick with it, you’ll notice a gradual loosening, and eventually, seemingly impossible poses will become possible.";
+
+    secondPoint.textContent = "Increases your blood flow";
+
+    secondPointParagraph.textContent = "Yoga gets your blood flowing. More specifically, the relaxation exercises you learn in yoga can help your circulation, especially in your hands and feet. Yoga also gets more oxygen to your cells, which function better as a result.";
+
+    thirdPoint.textContent = "Makes you happier";
+    
+    thirdPointParagraph.textContent = "Feeling sad? Sit in Lotus. Better yet, rise up into a backbend or soar royally into King Dancer Pose. While it’s not as simple as that, one study found that a consistent yoga practice improved depression and led to a significant increase in serotonin levels and a decrease in the levels of cortisol.";
+
+    content.appendChild(yoga);
+    content.appendChild(yogaParagraph);
+    content.appendChild(benefits);
+    content.appendChild(firstPoint);
+    content.appendChild(firstPointParagraph);
+    content.appendChild(secondPoint);
+    content.appendChild(secondPointParagraph);
+    content.appendChild(thirdPoint);
+    content.appendChild(thirdPointParagraph);
+});
+
+homeButton.addEventListener("click", () =>{
+    clearContent();
+
+    const about = document.createElement('h2');
+    const aboutParagraph = document.createElement('p');
+    const aboutParagraphTwo = document.createElement('p');
+    const aboutParagraphThree = document.createElement('p');
+
+    about.textContent = "About";
+    aboutParagraph.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas odio nulla, ac facilisis massa pretium vitae. Sed a iaculis arcu. Aenean dolor orci, egestas ut egestas ac, aliquet eu nisl. Aliquam sapien massa, venenatis nec venenatis ut, tincidunt porta massa. Vestibulum luctus tortor nibh. Sed malesuada sodales ex nec tempus. Nam quis convallis odio. Sed non dolor suscipit, consectetur tellus et, cursus leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.";
+    aboutParagraphTwo.textContent = aboutParagraph.textContent;
+    aboutParagraphThree.textContent = aboutParagraph.textContent;
+    content.appendChild(about);
+    content.appendChild(aboutParagraph);
+    content.appendChild(aboutParagraphTwo);
+    content.appendChild(aboutParagraphThree);
+});
 function clearContent(){
     content.innerHTML = "";
 };

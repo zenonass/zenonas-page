@@ -125,7 +125,6 @@ p{
 
 .content-wrapper{
     display: flex;
-    place-content: center;
     flex-direction: column;
     align-items: center;
     row-gap: 3vh;
